@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="voice_cook" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="アートボード 2" translatesAutoresizingMaskIntoConstraints="NO" id="b1e-G9-0YS">
+                                <rect key="frame" x="20" y="50" width="280" height="318"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="06X-aR-PIn" customClass="CustomButton" customModule="voice_cook" customModuleProvider="target">
+                                <rect key="frame" x="54" y="395" width="212" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="opm-AJ-sYa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="30"/>
+                                <state key="normal" title="START">
+                                    <color key="titleColor" red="0.75836348529999997" green="0.48335847259999998" blue="0.43927595019999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="9"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.27833807469999999" green="0.2669092119" blue="0.2589235902" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="VTb-x0-hk8" kind="show" id="FDt-bC-KRP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96432387829999999" green="0.94944274429999997" blue="0.92549705510000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="b1e-G9-0YS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="50" id="4T2-Mp-L6E"/>
+                            <constraint firstItem="06X-aR-PIn" firstAttribute="top" secondItem="b1e-G9-0YS" secondAttribute="bottom" constant="27" id="G0N-4P-VGK"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="b1e-G9-0YS" secondAttribute="bottom" constant="200" id="SAa-dc-GlJ"/>
+                            <constraint firstItem="06X-aR-PIn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="38" id="UsM-Uq-DvN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="06X-aR-PIn" secondAttribute="trailing" constant="38" id="VDE-oT-TMH"/>
+                            <constraint firstAttribute="trailing" secondItem="b1e-G9-0YS" secondAttribute="trailing" constant="20" id="WOQ-Ph-RZe"/>
+                            <constraint firstItem="b1e-G9-0YS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="u6r-MU-w52"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="image" destination="b1e-G9-0YS" id="V16-Kj-k28"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135" y="136.26760563380282"/>
+        </scene>
+        <!--Menu View Controller-->
+        <scene sceneID="fw2-ge-XkV">
+            <objects>
+                <viewController id="VTb-x0-hk8" customClass="MenuViewController" customModule="voice_cook" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dSC-xN-5Zn"/>
+                        <viewControllerLayoutGuide type="bottom" id="rx1-Kt-WDe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0jd-H0-Eaa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZV7-uV-MMF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="960" y="136"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="アートボード 2" width="499" height="534"/>
+    </resources>
+</document>
